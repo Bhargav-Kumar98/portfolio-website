@@ -1,464 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bhargav Kumar Aathava Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<head>
+	<title>Bhargav Kumar Aathava Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/aos.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
 
 
-<style>
-
-/*======================================
+	<style>
+		/*======================================
 //--//-->   ABOUT
 ======================================*/
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
 
 
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
 
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
 
 
-/* project image zoom effect */
+		/* Animation styles */
+		#typing-animation {
+			min-height: 1.5em;
+			position: relative;
+			font-size: 1.8rem;
+		}
 
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
+		/* Blinking cursor */
+		#typing-animation::after {
+			content: "|";
+			position: absolute;
+			right: -0.3em;
+			animation: blink 1s infinite;
+			color: #ffbd39;
+		}
 
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
+		@keyframes blink {
 
-.social-icons {
-	display: flex;
-	justify-content: left;
-	gap: 25px;
-  }
-  
-  .social-icons a {
-	font-size: 30px;
-	color: #fff;
-	transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-	color: #ffbd39;
-  }
-  
+			0%,
+			100% {
+				opacity: 1
+			}
 
-  .skill-header {
-    color: #ffbd39;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #fff;
-}
-
-  .skill-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.skill-box i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    
-}
-
-.profile-image {
-	width: 350px;
-	height: 350px;
-	border-radius: 50%;
-	background-size: cover;
-	background-position: center;
-}
+			50% {
+				opacity: 0
+			}
+		}
 
 
-/*About section new css */
-.resume-wrap {
-	padding: 30px;
-	border-radius: 20px;
-	border: 1px solid #e9ecef;
-	box-shadow: 0 0 15px rgba(0,0,0,0.05);
-	height: 100%;
-	text-align: center;
-  }
-  
-  .resume-wrap h3 {
-	color: #ffbd39;
-	margin-bottom: 20px;
-	font-weight: bold;
-  }
-  
-  
-  .experience-item, .education-item {
-	margin-bottom: 20px;
-  }
-  
-  .experience-item h4, .education-item h4 {
-	margin-bottom: 5px;
-  }
-  
-  .experience-item p, .education-item p {
-	margin-bottom: 2px;
-  }
-  
-  .date {
-	font-style: italic;
-	color: #6c757d;
-  }
+		@keyframes typing {
+			from {
+				width: 0;
+			}
 
-  .experience-box h3 .title-text,
-.education-box h3 .title-text,
-.achievements-box h3 .title-text,
-.activities-box h3 .title-text {
-  color: #ffbd39;
-  font-weight: bold;
-}
+			to {
+				width: 100%;
+			}
+		}
 
-.highlight {
-	font-weight: bold;
-	color: #ffbd39;
-  }
-  
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
 
 
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+
+		.social-icons {
+			display: flex;
+			justify-content: left;
+			gap: 25px;
+		}
+
+		.social-icons a {
+			font-size: 30px;
+			color: #fff;
+			transition: color 0.3s ease;
+		}
+
+		.social-icons a:hover {
+			color: #ffbd39;
+		}
+
+
+		.skill-header {
+			color: #ffbd39;
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+			border-bottom: 2px solid #fff;
+		}
+
+		.skill-box {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		.skill-box i {
+			font-size: 1.5rem;
+			margin-right: 10px;
+
+		}
+
+		.profile-image {
+			width: 350px;
+			height: 350px;
+			border-radius: 50%;
+			background-size: cover;
+			background-position: center;
+		}
+
+
+		/*About section new css */
+		.resume-wrap {
+			padding: 30px;
+			border-radius: 20px;
+			border: 1px solid #e9ecef;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+			height: 100%;
+			text-align: center;
+		}
+
+		.resume-wrap h3 {
+			color: #ffbd39;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+
+
+		.experience-item,
+		.education-item {
+			margin-bottom: 20px;
+		}
+
+		.experience-item h4,
+		.education-item h4 {
+			margin-bottom: 5px;
+		}
+
+		.experience-item p,
+		.education-item p {
+			margin-bottom: 2px;
+		}
+
+		.date {
+			font-style: italic;
+			color: #6c757d;
+		}
+
+		.experience-box h3 .title-text,
+		.education-box h3 .title-text,
+		.achievements-box h3 .title-text,
+		.activities-box h3 .title-text {
+			color: #ffbd39;
+			font-weight: bold;
+		}
+
+		.highlight {
+			font-weight: bold;
+			color: #ffbd39;
+		}
 
 
 
 
 
 
-  .project-buttons {
-	margin-top: 15px;
-  }
-  
-  .btn-custom {
-	background-color: #e5a82e;
-	color: #232931;
-	border: none;
-	padding: 5px 10px;
-	margin-bottom: 5px;
-	transition: all 0.3s ease;
-  }
-  
-  .btn-custom:hover {
-	background-color: #fff;
-	color: #232931;
-  }
-  
-  .btn-custom i {
-	margin-right: 5px;
-  }
-  
-  
-  .project-buttons .btn {
-	margin-right: 10px;
-  }
-  
-  .custom-carousel-controls {
-	margin-top: 30px;
-  }
-  
-  .custom-carousel-controls .btn {
-	margin: 0 5px;
-  }
-  
 
 
-  .latest-tag {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	background-color: rgba(255, 189, 57, 0.9);
-	color: #232931;
-	padding: 5px 10px;
-	font-size: 12px;
-	font-weight: bold;
-	text-transform: uppercase;
-	border-radius: 20px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	transition: all 0.3s ease;
-	display: flex;
-	align-items: center;
-  }
-  
-  .latest-tag i {
-	margin-right: 5px;
-	font-size: 14px;
-	color: #232931;
-  }
-  
-  .latest-tag:hover {
-	transform: scale(1.05);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  
 
-</style>
+		.project-buttons {
+			margin-top: 15px;
+		}
+
+		.btn-custom {
+			background-color: #e5a82e;
+			color: #232931;
+			border: none;
+			padding: 5px 10px;
+			margin-bottom: 5px;
+			transition: all 0.3s ease;
+		}
+
+		.btn-custom:hover {
+			background-color: #fff;
+			color: #232931;
+		}
+
+		.btn-custom i {
+			margin-right: 5px;
+		}
 
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Bhargav Kumar Aathava</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+		.project-buttons .btn {
+			margin-right: 10px;
+		}
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-				<div class="one-third js-fullheight order-md-last img" style="background-image: none; display: flex; justify-content: flex-end; align-items: center;">
-					<div class="profile-image" style="background-image: url(images/ab.jpg);"></div>
-				  </div>									
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Bhargav Kumar Aathava</span></h1>
+		.custom-carousel-controls {
+			margin-top: 30px;
+		}
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+		.custom-carousel-controls .btn {
+			margin: 0 5px;
+		}
 
-						<script>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
-						const typingTexts = [
-						'AI & ML Practitioner   ',
-						'Cloud & Analytics Professional   ',
-						'Tech Blogger   '
-						];
+		.latest-tag {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: rgba(255, 189, 57, 0.9);
+			color: #232931;
+			padding: 5px 10px;
+			font-size: 12px;
+			font-weight: bold;
+			text-transform: uppercase;
+			border-radius: 20px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease;
+			display: flex;
+			align-items: center;
+		}
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 100); // Increase the delay to slow down the typing animation
-						}
+		.latest-tag i {
+			margin-right: 5px;
+			font-size: 14px;
+			color: #232931;
+		}
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 140);
-						}
+		.latest-tag:hover {
+			transform: scale(1.05);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		}
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
 
-						</script>
-						<p class="social-icons mt-4">
-							<a href="https://github.com/Bhargav-Kumar98" target="_blank" title="GitHub">
-								<i class="icon-github"></i>
-							</a>
-							<a href="https://medium.com/@bhargavkumar564" target="_blank" title="Medium">
-								<i class="icon-medium"></i>
-							</a>
-							<a href="https://www.linkedin.com/in/bhargav-kumar-aathava-23aa85289" target="_blank" title="LinkedIn">
-								<i class="icon-linkedin"></i>
-							</a>
-							<a href="mailto:bhargavoffic@gmail.com" title="Email">
-								<i class="icon-envelope"></i>
-							</a>
-						</p>
-						
-						  
-						  
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
+
+
+
+
+
+
+
+
+		/* Tab navigation container */
+		.project-tabs {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		/* Tab buttons styling */
+		.project-tabs .tablink {
+			background-color: transparent;
+			border: none;
+			color: #fff;
+			font-size: 1.2rem;
+			padding: 10px 20px;
+			margin: 0 5px;
+			cursor: pointer;
+			border-bottom: 2px solid transparent;
+			transition: border-color 0.3s ease-in-out;
+		}
+
+		.project-tabs .tablink.active {
+			border-bottom-color: #ffbd39;
+			/* Highlight active tab */
+		}
+
+		/* Hide all tab content by default */
+		.tabcontent {
+			display: none;
+		}
+
+		/* Show active tab content */
+		.tabcontent.active {
+			display: block;
+		}
+
+
+
+
+		/* General Styling */
+		#home-section {
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			background: linear-gradient(to bottom, #000000, #1a1a1a);
+			color: #fff;
+		}
+
+		.profile-image {
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			background-size: cover;
+			background-position: center;
+			border: 5px solid #ffbd39;
+		}
+
+		.subheading {
+			font-size: 1.5rem;
+			color: #ffbd39;
+			font-weight: bold;
+		}
+
+		h1 span {
+			color: #ffbd39;
+		}
+
+		.social-icons a {
+			font-size: 1.5rem;
+			margin-right: 15px;
+			color: #fff;
+			transition: color 0.3s ease-in-out;
+		}
+
+		.social-icons a:hover {
+			color: #ffbd39;
+		}
+
+		.btn-primary {
+			background-color: #ffbd39;
+			border-color: #ffbd39;
+			color: #232931;
+			font-weight: bold;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.btn-primary:hover {
+			background-color: #fff;
+			color: #232931;
+		}
+
+		/* Responsive Design */
+		@media (max-width: 768px) {
+			.profile-image {
+				width: 200px;
+				height: 200px;
+				margin-bottom: 20px;
+			}
+
+			h1 {
+				font-size: 1.8rem;
+				text-align: center;
+			}
+
+			.subheading,
+			p,
+			.btn-primary {
+				text-align: center;
+				margin-bottom: 10px;
+				width: 100%;
+			}
+
+			.social-icons {
+				justify-content: center !important;
+				margin-top: 20px;
+			}
+
+			.social-icons a {
+				margin-right: 10px !important;
+				font-size: larger;
+			}
+		}
+
+		/* Desktop Alignment (≥992px) */
+		@media (min-width: 992px) {
+			#home-section .desktop-text-adjust {
+				margin-left: 15%;
+				/* Push content rightward */
+				max-width: 500px;
+				/* Optimal reading width */
+				text-align: left !important;
+			}
+
+			#home-section h1 {
+				text-align: left !important;
+			}
+
+			#home-section .social-icons {
+				justify-content: flex-end !important;
+			}
+		}
+
+		/* Reset for mobile/tablet */
+		@media (max-width: 991px) {
+			#home-section .desktop-text-adjust {
+				margin-left: 0;
+				max-width: 100%;
+				padding-right: 0;
+			}
+		}
+
+
+		@media (max-width: 991px) {
+			.navbar .container {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.navbar-brand {
+				margin-bottom: 10px;
+			}
+
+			.navbar-toggler {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			.navbar-collapse {
+				width: 100%;
+				text-align: center;
+			}
+
+			.navbar-nav {
+				display: inline-block;
+				float: none;
+			}
+		}
+
+
+
+		/* Certifications Section Styling */
+		#certifications-section .resume-wrap {
+			border: 1px solid #343a40;
+			border-radius: 15px;
+			transition: all 0.3s ease;
+			height: 100%;
+		}
+
+		#certifications-section .resume-wrap:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 30px rgba(255, 189, 57, 0.1);
+		}
+
+		#certifications-section .skill-header {
+			color: #ffbd39;
+			border-bottom: 2px solid #343a40;
+			padding-bottom: 0.5rem;
+			margin-bottom: 1rem;
+		}
+
+		#certifications-section .date {
+			color: #6c757d;
+			font-size: 0.9rem;
+		}
+
+		#certifications-section a {
+			text-decoration: none;
+			font-weight: 500;
+			transition: color 0.3s ease;
+		}
+
+		#certifications-section a:hover {
+			opacity: 0.8;
+		}
+
+		#certifications-section .row {
+			margin-bottom: 3rem;
+			/* Increased vertical spacing between rows */
+		}
+
+		#certifications-section .resume-wrap {
+			margin-bottom: 2rem;
+			/* Optional: Adds spacing between items if they wrap */
+		}
+
+		/* For desktop views (≥992px) */
+		@media (min-width: 992px) {
+			.navbar .container {
+				flex-direction: row !important;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.navbar-brand {
+				margin-bottom: 0;
+				flex-shrink: 0;
+			}
+
+			.navbar-collapse {
+				flex-grow: 0;
+			}
+
+			.navbar-nav {
+				display: flex;
+				flex-direction: row;
+				margin-left: auto;
+			}
+
+			.nav-item {
+				margin-left: 1.5rem;
+			}
+		}
+
+		/* Reset mobile styles for desktop */
+		@media (min-width: 992px) {
+			.navbar-toggler {
+				display: none;
+			}
+
+			.navbar-collapse {
+				display: block !important;
+			}
+		}
+
+		/* Desktop view adjustments */
+		@media (min-width: 992px) {
+			.navbar-nav .nav-link {
+				padding-left: 0.5rem !important;
+				/* Reduced from default 1rem */
+				padding-right: 0.5rem !important;
+			}
+
+			.nav-item {
+				margin-left: 0.8rem !important;
+				/* Reduced from typical 1.5rem */
+				margin-right: 0.8rem !important;
+			}
+		}
+
+		/* Mobile view preservation */
+		@media (max-width: 991px) {
+			.navbar-nav .nav-link {
+				padding: 0.5rem 1rem;
+				/* Maintain mobile padding */
+			}
+		}
+
+		#certifications-carousel .carousel-control-prev,
+		#certifications-carousel .carousel-control-next {
+		  width: 5%;
+		  color: #ffbd39;
+		}
+		
+		#certifications-carousel .carousel-control-prev-icon,
+		#certifications-carousel .carousel-control-next-icon {
+		  background-color: #ffbd39;
+		  border-radius: 50%;
+		  padding: 10px;
+		}
+		
+		.carousel-controls-container {
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+		  }
+		  
+		  #certifications-carousel .carousel-control-prev,
+		  #certifications-carousel .carousel-control-next {
+			position: static;
+			width: auto;
+			margin: 0 10px;
+		  }
+		  
+		  #certifications-carousel .carousel-control-prev-icon,
+		  #certifications-carousel .carousel-control-next-icon {
+			background-color: #ffbd39;
+			border-radius: 50%;
+			padding: 15px;
+		  }
+		  
+
+
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container flex-column">
+			<a class="navbar-brand" href="index.html">Bhargav Kumar Aathava</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle mt-2" type="button"
+				data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav mx-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#certifications-section"
+							class="nav-link"><span>Certifications</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
 		</div>
-    </section>
+	</nav>
+
+
+	<section id="home-section" class="hero">
+		<div class="container-fluid p-0">
+			<div class="row no-gutters align-items-center justify-content-center">
+				<!-- Profile Image -->
+				<div class="col-lg-6 col-md-6 col-sm-12 text-center order-md-last">
+					<div class="profile-image mx-auto" style="background-image: url('images/ab.jpg');"></div>
+				</div>
+				<!-- Text Content -->
+				<div class="col-lg-6 col-md-6 col-sm-12 
+				            d-flex flex-column 
+				            align-items-lg-start align-items-md-start
+				            justify-content-center 
+				            text-lg-left text-md-left
+				            px-4 desktop-text-adjust">
+					<span class="subheading">Welcome!</span>
+					<h1 class="mb-4 mt-3">I'm <span>Bhargav Kumar Aathava</span></h1>
+					<p id="typing-animation" class="mb-4"></p>
+					<p class="social-icons mt-4">
+						<a href="https://github.com/Bhargav-Kumar98" target="_blank" title="GitHub"><i
+								class="fab fa-github"></i></a>
+						<a href="https://medium.com/@bhargavkumar564" target="_blank" title="Medium"><i
+								class="fab fa-medium"></i></a>
+						<a href="https://www.linkedin.com/in/bhargav-kumar-aathava-23aa85289" target="_blank"
+							title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+						<a href="mailto:bhargavoffic@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
-		  <div class="row justify-content-center">
-			<div class="col-md-10 col-lg-8 text-center">
-			  <div class="heading-section ftco-animate" style="margin-bottom: 20px;">
-				<h1 class="big big-2">About</h1>
-				<h2 class="mb-2">About Me</h2>
-			  </div>
-			</div>
-		  </div>
-		  <div class="row mt-5">
-			<div class="col-md-12">
-			  <div class="about-content">
-				<p class="text-center">Welcome to my portfolio! I am an IT professional with a strong passion for Artificial Intelligence and Data Science. My expertise lies in leveraging advanced technologies such as machine learning, big data analytics, and predictive modeling to solve real-world challenges and deliver impactful solutions. With a solid technical foundation and a creative approach, I excel at transforming complex data into actionable insights that drive innovation.</p>
-				<p class="text-center">Here, you’ll find a showcase of my projects, skills, and achievements that reflect my journey in the ever-evolving tech landscape. Whether it’s building intelligent systems, exploring advancements in AI, or collaborating on forward-thinking initiatives, I am always excited to push the boundaries of what technology can achieve. Feel free to explore my work and reach out if you’d like to connect or collaborate!</p>
-			  </div>
-			</div>
-		  </div>
-		  
-		  <div class="row mt-5">
-			<div class="col-md-6">
-			  <div class="experience-box">
-				<h3><i class="icon-briefcase mr-2"></i><span class="title-text">Experience</span></h3>
-				<div class="timeline">
-				  <div class="timeline-item">
-					<h4>Systems Engineer</h4>
-					<p><span class="highlight">Infosys</span> <br> Bengaluru, India</p>
-					<span class="date">2021-2023</span>
-				  </div>
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8 text-center">
+					<div class="heading-section ftco-animate" style="margin-bottom: 20px;">
+						<h1 class="big big-2">About</h1>
+						<h2 class="mb-2">About Me</h2>
+					</div>
 				</div>
-			  </div>
 			</div>
-			<div class="col-md-6">
-			  <div class="education-box">
-				<h3><i class="icon-graduation-cap mr-2"></i><span class="title-text">Education</span></h3>
-				<div class="timeline">
-				  <div class="timeline-item">
-					<h4>Master of Information Technology and Management</h4>
-					<p><span class="highlight">Illinois Institute of Technology</span>, USA</p>
-					<span class="date">2023-2025</span>
-					<p>GPA: 3.8/4.0</p>
-				  </div>
-				  <div class="timeline-item">
-					<h4>Bachelor of Technology</h4>
-					<p><span class="highlight">Maharaja Vijayaram Gajapathi Raj College of Engineering</span>, India</p>
-					<span class="date">2017-2021</span>
-					<p>GPA: 3.5/4.0</p>
-				  </div>
+			<div class="row mt-5">
+				<div class="col-md-12">
+					<div class="about-content">
+						<p class="text-center">Welcome to my portfolio! I am an IT professional with a strong passion
+							for Artificial Intelligence and Data Science. My expertise lies in leveraging advanced
+							technologies such as machine learning, big data analytics, and predictive modeling to solve
+							real-world challenges and deliver impactful solutions. With a solid technical foundation and
+							a creative approach, I excel at transforming complex data into actionable insights that
+							drive innovation.</p>
+						<p class="text-center">Here, you’ll find a showcase of my projects, skills, and achievements
+							that reflect my journey in the ever-evolving tech landscape. Whether it’s building
+							intelligent systems, exploring advancements in AI, or collaborating on forward-thinking
+							initiatives, I am always excited to push the boundaries of what technology can achieve. Feel
+							free to explore my work and reach out if you’d like to connect or collaborate!</p>
+					</div>
 				</div>
-			  </div>
 			</div>
-		  </div>
-	  
-		  <div class="row mt-5">
-			<div class="col-md-6">
-			  <div class="achievements-box">
-				<h3><i class="fas fa-trophy mr-2"></i><span class="title-text">Achievements</span></h3>
-				<ul class="list-unstyled">
-				  <li><i class="fas fa-star mr-2"></i>Awarded "Top Performer" for outstanding performance during the Foundation Program at Infosys.</li>
-				  <li><i class="fas fa-award mr-2"></i>Recipient of a $12,000 scholarship awarded for academic excellence to pursue master's degree.</li>
-				</ul>
-			  </div>
-			</div>
-			<div class="col-md-6">
-			  <div class="activities-box">
-				<h3><i class="fas fa-hands-helping mr-2"></i><span class="title-text">Activities & Volunteering</span></h3>
-				<ul class="list-unstyled">
-					<li><i class="fas fa-users mr-2"></i>
-						<strong>Volunteer, Student Wing of Civic Organization:</strong>
-						Actively contributed to various community initiatives and campaigns over a span of four years, enhancing engagement and promoting social impact.
-					  </li>					  
-				</ul>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
 
-	  <section class="ftco-section" id="skills-section">
+			<div class="row mt-5">
+				<div class="col-md-6">
+					<div class="experience-box">
+						<h3><i class="icon-briefcase mr-2"></i><span class="title-text">Experience</span></h3>
+						<div class="timeline">
+							<div class="timeline-item">
+								<h4>Systems Engineer</h4>
+								<p><span class="highlight">Infosys</span> <br> Bengaluru, India</p>
+								<span class="date">2021-2023</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="education-box">
+						<h3><i class="icon-graduation-cap mr-2"></i><span class="title-text">Education</span></h3>
+						<div class="timeline">
+							<div class="timeline-item">
+								<h4>Master of Information Technology and Management</h4>
+								<p><span class="highlight">Illinois Institute of Technology</span>, USA</p>
+								<span class="date">2023-2025</span>
+								<p>GPA: 3.8/4.0</p>
+							</div>
+							<div class="timeline-item">
+								<h4>Bachelor of Technology</h4>
+								<p><span class="highlight">Maharaja Vijayaram Gajapathi Raj College of
+										Engineering</span>, India</p>
+								<span class="date">2017-2021</span>
+								<p>GPA: 3.5/4.0</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-5">
+				<div class="col-md-6">
+					<div class="achievements-box">
+						<h3><i class="fas fa-trophy mr-2"></i><span class="title-text">Achievements</span></h3>
+						<ul class="list-unstyled">
+							<li><i class="fas fa-star mr-2"></i>Awarded "Top Performer" for outstanding performance
+								during the Foundation Program at Infosys.</li>
+							<li><i class="fas fa-award mr-2"></i>Recipient of a $12,000 scholarship awarded for academic
+								excellence to pursue master's degree.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="activities-box">
+						<h3><i class="fas fa-hands-helping mr-2"></i><span class="title-text">Activities &
+								Volunteering</span></h3>
+						<ul class="list-unstyled">
+							<li><i class="fas fa-users mr-2"></i>
+								<strong>Volunteer, Student Wing of Civic Organization:</strong>
+								Actively contributed to various community initiatives and campaigns over a span of four
+								years, enhancing engagement and promoting social impact.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="skills-section">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-10 heading-section text-center ftco-animate">
@@ -597,367 +915,698 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="ftco-section" id="project-section">
 		<div class="container">
-		  <div class="row justify-content-center mb-5 pb-5">
-			<div class="col-md-7 heading-section text-center ftco-animate">
-			  <h1 class="big big-2">Projects</h1>
-			  <h2 class="mb-4">Projects</h2>
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+				</div>
 			</div>
-		  </div>
-		  
-		  <div class="project-carousel owl-carousel">
-			<div class="row d-flex">
-											  <!-- Project 1 -->
-											  <div class="col-md-4 d-flex ftco-animate">
-												<div class="blog-entry justify-content-end">
-													<a href="https://github.com/Bhargav-Kumar98/Product_Ingredient_Analyser_Agent" target="_blank"  class="block-20 zoom-effect" style="background-image: url('images/product_Ingre.png');">
-														<span class="latest-tag"><i class="fas fa-star"></i> Latest</span>
-													  </a>
-																			
-												  <div class="text mt-3 float-right d-block">
-													<h3 class="heading">Product Ingredient Analyzer</h3>
-													<p class="text-justify">Developed an AI-powered app leveraging Phidata, Google Gemini, and Tavily API to analyze product ingredient images. Delivered detailed ingredient breakdowns, health insights, and potential concerns by integrating scientific research with advanced search capabilities, enhancing consumer awareness and promoting informed decision-making regarding product safety and health impacts.</p>
-													<p><strong>Technologies used:</strong> Python, Phidata, Google Gemini, Streamlit</p>
-													<div class="project-buttons text-center">
-														<a href="https://ingredientanalyzer.streamlit.app/" target="_blank" class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> App </a>
-													  <a href="https://github.com/Bhargav-Kumar98/Product_Ingredient_Analyser_Agent" target="_blank"  class="btn btn-custom btn-sm"><i class="icon-github"></i>Source Code</a>
-													</div>
-												  </div>
-												</div>
-											  </div>
-							  <!-- Project 1 -->
-							  <div class="col-md-4 d-flex ftco-animate">
-								<div class="blog-entry justify-content-end">
-									<a href="https://github.com/Bhargav-Kumar98/IntelliNotify" target="_blank"  class="block-20 zoom-effect" style="background-image: url('images/intelliNotify.jpg');">
-										<span class="latest-tag"><i class="fas fa-star"></i> Latest</span>
-									  </a>
-															
-								  <div class="text mt-3 float-right d-block">
-									<h3 class="heading">IntelliNotify - AI-Powered Discord Message Filtering & Notification System</h3>
-									<p class="text-justify">AI-powered bot leverages large language models to monitor Discord servers for specific topics of interest and instantly notifies users when relevant messages are posted. It empowers users to set preferences, enabling real-time alerts and reducing the noise in group chats.</p>
-									<p><strong>Technologies used:</strong> Python, Langchain, MongoDB</p>
-									<div class="project-buttons text-center">
-										<a href="#" target="_blank" class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> Demo</a>
-									  <a href="https://github.com/Bhargav-Kumar98/IntelliNotify" target="_blank"  class="btn btn-custom btn-sm"><i class="icon-github"></i>Source Code</a>
-									  <a href="https://medium.com/@bhargavkumar564/building-a-context-aware-notification-bot-for-discord-e70253eeac3d" target="_blank"  class="btn btn-custom btn-sm"><i class="icon-medium"></i>Project Breakdown</a>
-									</div>
-								  </div>
-								</div>
-							  </div>
 
-							  <!-- Project 1 -->
-							  <div class="col-md-4 d-flex ftco-animate">
-								<div class="blog-entry justify-content-end">
-									<a href="images\Ifinget Demo.mp4" target="_blank"  class="block-20 zoom-effect" style="background-image: url('images/budget.jpg');">
-										<span class="latest-tag"><i class="fas fa-star"></i> Latest</span>
-									  </a>
-															
-								  <div class="text mt-3 float-right d-block">
-									<h3 class="heading">I Finget - Financial Tracker and Stock Insights Android App</h3>
-									<p class="text-justify">Developed an Android application using Java and Android X to track financial transactions, fetch real-time stock data, and display related news. Integrated SQLite for local storage and Firebase for authentication to ensure secure and efficient data management.</p>
-									<p><strong>Technologies used:</strong> Java, Android X, SQLite, Firebase</p>
-									<div class="project-buttons text-center">
-										<a href="images\Ifinget Demo.mp4" target="_blank" class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> Demo</a>
-									  <a href="https://github.com/Bhargav-Kumar98/I-Finget-Project" target="_blank"  class="btn btn-custom btn-sm"><i class="icon-github"></i>Check Project</a>
-									</div>
-								  </div>
-								</div>
-							  </div>
-			  <!-- Project 2 -->
-			  <div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-					<a href="https://github.com/Bhargav-Kumar98/Automated-Data-Pipeline-for-News-Extraction-and-Analysis-with-Airflow-and-AWS" target="_blank"  class="block-20 zoom-effect" style="background-image: url('images/newsEtl.png');">
-					  </a>
-											
-				  <div class="text mt-3 float-right d-block">
-					<h3 class="heading">Automated Data Pipeline for News Extraction and Analysis with Airflow and AWS</h3>
-					<p class="text-justify">Developed a scalable and automated pipeline using Apache Airflow to extract, process, and store news data. Leveraged AWS services (S3, Glue, Redshift, Athena) alongside PostgreSQL, Celery, and Docker for efficient analysis.</p>
-					<p><strong>Technologies used:</strong> AWS, Airflow, Docker</p>
-					<div class="project-buttons text-center">
-					  <a href="https://github.com/Bhargav-Kumar98/Automated-Data-Pipeline-for-News-Extraction-and-Analysis-with-Airflow-and-AWS" target="_blank"  class="btn btn-custom btn-sm"><i class="icon-github"></i>Check Project</a>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  
-			  <!-- Project 3 -->
-			  <div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				  <a href="https://github.com/Bhargav-Kumar98/Diabetes-Diagnosis-from-Early-ICU-Data" target="_blank"  class="block-20 zoom-effect" style="background-image: url('images/diabetes.png');">
-				  </a>
-				  <div class="text mt-3 float-right d-block">
-					<h3 class="heading">Diabetes Diagnosis in ICU Patients Using Machine Learning</h3>
-					<p>Developed a machine learning model to diagnose diabetes in ICU patients using clinical data, focusing on feature engineering and hyperparameter tuning to improve accuracy and reliability.</p>
-					<p><strong>Technologies used:</strong> Python, Machine Learning</p>
-					<div class="project-buttons text-center">
-						<a href="https://github.com/Bhargav-Kumar98/Diabetes-Diagnosis-from-Early-ICU-Data" target="_blank"  class="btn btn-custom btn-sm"><i class="icon-github"></i>Check Project</a>
-					  </div>
-				  </div>
-				</div>
-			  </div>
-			  
-			  <!-- Project 4 -->
-			  <div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry">
-				  <a href="https://github.com/Bhargav-Kumar98/Steelcase-Azure-Project" target="_blank"  class="block-20 zoom-effect" style="background-image: url('images/datawarehouse.png');">
-				  </a>
-				  <div class="text mt-3 float-right d-block">
-					<h3 class="heading">End-to-End Data Warehousing and BI Solution using Azure</h3>
-					<p>Leveraging Azure Storage, Data Factory, Databricks, Synapse Analytics, and Power BI, this project demonstrates an end-to-end data workflow ingesting, transforming, and visualizing complex datasets to generate actionable insights through interactive dashboards.</p>
-					<p><strong>Technologies used:</strong> Azure, Databricks, Power BI</p>
-					<div class="project-buttons text-center">
-						<a href="https://github.com/Bhargav-Kumar98/Steelcase-Azure-Project" target="_blank"  class="btn btn-custom btn-sm"><i class="icon-github"></i> Check Project</a>
-					  </div>
-				  </div>
-				</div>
-			  </div>
-
-
-			  
-			  
-			  <div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				  <a href="https://github.com/Bhargav-Kumar98/Medical-Insurance-Cost-Prediction" target="_blank"  class="block-20 zoom-effect" style="background-image: url('images/insurance.png');">
-				  </a>
-				  <div class="text mt-3 float-right d-block">
-					<h3 class="heading"><a href="#">Medical Insurance Cost Prediction</a></h3>
-					<p>Analyzed a medical cost personal dataset to understand factors influencing healthcare charges. It employs data exploration, hypothesis testing, and linear regression techniques to identify key variables affecting medical costs, with a focus on the impact of smoking status, age, and BMI on healthcare expenses.</p>
-					<p><strong>Technologies used:</strong> R, Statistical Techniques</p>
-					<div class="project-buttons text-center">
-						<a href="https://github.com/Bhargav-Kumar98/Medical-Insurance-Cost-Prediction" target="_blank"  class="btn btn-custom btn-sm"><i class="icon-github"></i> Check Project</a>
-					  </div>
-				  </div>
-				</div>
-			  </div>
-						<!--  
-							<div class="col-md-4 d-flex ftco-animate">
-								<div class="blog-entry justify-content-end">
-								  <a href="#" target="_blank"  class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-								  </a>
-								  <div class="text mt-3 float-right d-block">
-									<h3 class="heading"><a href="#">Sales Forecast- Time Series Forecasting</a></h3>
-									<p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-									<p><strong>Technologies used:</strong> Machine Learning, Time Series Analysis</p>
-									<div class="project-buttons text-center">
-										<a href="#" target="_blank" class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> Demo</a>
-										<a href="#" target="_blank"  class="btn btn-custom btn-sm"><i class="icon-github"></i> GitHub</a>
-									  </div>
-								  </div>
-								</div>
-							  </div> -->
+			<div class="project-tabs">
+				<button class="tablink active" onclick="openProjectTab(event, 'artificialIntelligence')">Artificial
+					Intelligence</button>
+				<button class="tablink" onclick="openProjectTab(event, 'dataEngineering')">Big Data & Data
+					Engineering</button>
+				<button class="tablink" onclick="openProjectTab(event, 'dataAnalytics')">Data Analytics</button>
+				<button class="tablink" onclick="openProjectTab(event, 'softwaredevelopment')">Software Development</button>
 			</div>
-			<!--
-			<div class="row d-flex justify-content-center">
 
-			  <div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				  <a href="#" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				  </a>
-				  <div class="text mt-3 float-right d-block">
-					<h3 class="heading"><a href="#">Sales Forecast- Time Series Forecasting</a></h3>
-					<p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-					<p><strong>Technologies used:</strong> Machine Learning, Time Series Analysis</p>
-					<div class="project-buttons text-center">
-						<a href="#" target="_blank" class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> Demo</a>
-						<a href="#" target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i> GitHub</a>
-					  </div>
-				  </div>
-				</div>
-			  </div>
-			  
-			  <div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				  <a href="#" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				  </a>
-				  <div class="text mt-3 float-right d-block">
-					<h3 class="heading"><a href="#">Customer Segmentation using Clustering Model</a></h3>
-					<p>Developed an ML model to provide recommendations of financial products & services to target customer groups.</p>
-					<p><strong>Technologies used:</strong> Machine Learning, Clustering</p>
-					<div class="project-buttons text-center">
-						<a href="#" target="_blank" class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> Demo</a>
-						<a href="#" target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i> GitHub</a>
-					  </div>
-				  </div>
-				</div>
-			  </div>
+			<div id="artificialIntelligence" class="tabcontent active">
+				<div class="row">
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://github.com/Bhargav-Kumar98/Product_Ingredient_Analyser_Agent"
+								target="_blank" class="block-20 zoom-effect"
+								style="background-image: url('images/product_Ingre.png');">
+								<span class="latest-tag"><i class="fas fa-star"></i> Latest</span>
+							</a>
 
-							<div class="col-md-4 d-flex ftco-animate">
-								<div class="blog-entry justify-content-end">
-								  <a href="#" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-								  </a>
-								  <div class="text mt-3 float-right d-block">
-									<h3 class="heading"><a href="#">Sales Forecast- Time Series Forecasting</a></h3>
-									<p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-									<p><strong>Technologies used:</strong> Machine Learning, Time Series Analysis</p>
-									<div class="project-buttons text-center">
-										<a href="#" target="_blank" class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> Demo</a>
-										<a href="#" target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i> GitHub</a>
-									  </div>
-								  </div>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">Product Ingredient Analyzer</h3>
+								<p class="text-justify">Developed an AI-powered app leveraging Phidata, Google Gemini,
+									and Tavily API to analyze product ingredient images. Delivered detailed ingredient
+									breakdowns, health insights, and potential concerns by integrating scientific
+									research with advanced search capabilities, enhancing consumer awareness and
+									promoting informed decision-making regarding product safety and health impacts.</p>
+								<p><strong>Technologies used:</strong> Python, Phidata, Google Gemini, Streamlit</p>
+								<div class="project-buttons text-center">
+									<a href="https://ingredientanalyzer.streamlit.app/" target="_blank"
+										class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> App </a>
+									<a href="https://github.com/Bhargav-Kumar98/Product_Ingredient_Analyser_Agent"
+										target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i>Source
+										Code</a>
 								</div>
-							  </div>
-
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-					  <a href="#" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-					  </a>
-					  <div class="text mt-3 float-right d-block">
-						<h3 class="heading"><a href="#">Sales Forecast- Time Series Forecasting</a></h3>
-						<p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-						<p><strong>Technologies used:</strong> Machine Learning, Time Series Analysis</p>
-						<div class="project-buttons text-center">
-						  <a href="#" target="_blank"  class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> Demo</a>
-						  <a href="#" target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i> GitHub</a>
+							</div>
 						</div>
-					  </div>
 					</div>
-				  </div>
 
-				  <div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-					  <a href="#" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-					  </a>
-					  <div class="text mt-3 float-right d-block">
-						<h3 class="heading"><a href="#">Customer Segmentation using Clustering Model</a></h3>
-						<p>Developed an ML model to provide recommendations of financial products & services to target customer groups.</p>
-						<p><strong>Technologies used:</strong> Machine Learning, Clustering</p>
-						<div class="project-buttons text-center">
-						  <a href="#" target="_blank" class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> Demo</a>
-						  <a href="#" target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i> GitHub</a>
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://github.com/Bhargav-Kumar98/IntelliNotify" target="_blank"
+								class="block-20 zoom-effect" style="background-image: url('images/intelliNotify.jpg');">
+								<span class="latest-tag"><i class="fas fa-star"></i> Latest</span>
+							</a>
+
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">IntelliNotify - AI Powered Discord Message Filtering & Notification
+									System</h3>
+								<p class="text-justify">AI-powered bot leverages large language models to monitor
+									Discord servers for specific topics of interest and instantly notifies users when
+									relevant messages are posted. It empowers users to set preferences, enabling
+									real-time alerts and reducing the noise in group chats.</p>
+								<p><strong>Technologies used:</strong> Python, Langchain, MongoDB</p>
+								<div class="project-buttons text-center">
+									<a href="#" target="_blank" class="btn btn-custom btn-sm mr-2"><i
+											class="icon-eye"></i> Demo</a>
+									<a href="https://github.com/Bhargav-Kumar98/IntelliNotify" target="_blank"
+										class="btn btn-custom btn-sm"><i class="icon-github"></i>Source Code</a>
+									<a href="https://medium.com/@bhargavkumar564/building-a-context-aware-notification-bot-for-discord-e70253eeac3d"
+										target="_blank" class="btn btn-custom btn-sm"><i class="icon-medium"></i>Project
+										Breakdown</a>
+								</div>
+							</div>
 						</div>
-					  </div>
 					</div>
-				  </div>
-			</div>-->
-		  </div>
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://github.com/Bhargav-Kumar98/Diabetes-Diagnosis-from-Early-ICU-Data"
+								target="_blank" class="block-20 zoom-effect"
+								style="background-image: url('images/diabetes.png');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">Diabetes Diagnosis in ICU Patients Using Machine Learning</h3>
+								<p>Developed a machine learning model to diagnose diabetes in ICU patients using
+									clinical data, focusing on feature engineering and hyperparameter tuning to improve
+									accuracy and reliability.</p>
+								<p><strong>Technologies used:</strong> Python, Machine Learning</p>
+								<div class="project-buttons text-center">
+									<a href="https://github.com/Bhargav-Kumar98/Diabetes-Diagnosis-from-Early-ICU-Data"
+										target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i>Check
+										Project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://github.com/Bhargav-Kumar98/Medical-Insurance-Cost-Prediction"
+								target="_blank" class="block-20 zoom-effect"
+								style="background-image: url('images/insurance.png');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading"><a href="#">Medical Insurance Cost Prediction</a></h3>
+								<p>Analyzed a medical cost personal dataset to understand factors influencing healthcare
+									charges. It employs data exploration, hypothesis testing, and linear regression
+									techniques to identify key variables affecting medical costs, with a focus on the
+									impact of smoking status, age, and BMI on healthcare expenses.</p>
+								<p><strong>Technologies used:</strong> R, Statistical Techniques</p>
+								<div class="project-buttons text-center">
+									<a href="https://github.com/Bhargav-Kumar98/Medical-Insurance-Cost-Prediction"
+										target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i> Check
+										Project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="dataEngineering" class="tabcontent">
+				<div class="row">
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://github.com/Bhargav-Kumar98/Automated-Data-Pipeline-for-News-Extraction-and-Analysis-with-Airflow-and-AWS"
+								target="_blank" class="block-20 zoom-effect"
+								style="background-image: url('images/newsEtl.png');">
+							</a>
+
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">Automated Data Pipeline for News Extraction and Analysis with
+									Airflow and AWS</h3>
+								<p class="text-justify">Developed a scalable and automated pipeline using Apache Airflow
+									to extract, process, and store news data. Leveraged AWS services (S3, Glue,
+									Redshift, Athena) alongside PostgreSQL, Celery, and Docker for efficient analysis.
+								</p>
+								<p><strong>Technologies used:</strong> AWS, Airflow, Docker</p>
+								<div class="project-buttons text-center">
+									<a href="https://github.com/Bhargav-Kumar98/Automated-Data-Pipeline-for-News-Extraction-and-Analysis-with-Airflow-and-AWS"
+										target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i>Check
+										Project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry">
+							<a href="https://github.com/Bhargav-Kumar98/Steelcase-Azure-Project" target="_blank"
+								class="block-20 zoom-effect" style="background-image: url('images/datawarehouse.png');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">End-to-End Data Warehousing and BI Solution using Azure</h3>
+								<p>Leveraging Azure Storage, Data Factory, Databricks, Synapse Analytics, and Power BI,
+									this project demonstrates an end-to-end data workflow ingesting, transforming, and
+									visualizing complex datasets to generate actionable insights through interactive
+									dashboards.</p>
+								<p><strong>Technologies used:</strong> Azure, Databricks, Power BI</p>
+								<div class="project-buttons text-center">
+									<a href="https://github.com/Bhargav-Kumar98/Steelcase-Azure-Project" target="_blank"
+										class="btn btn-custom btn-sm"><i class="icon-github"></i> Check Project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="dataAnalytics" class="tabcontent">
+				<div class="row">
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href=""
+								target="_blank" class="block-20 zoom-effect"
+								style="background-image: url('images/funnel_analysis.jpg');">
+								<span class="latest-tag"><i class="fas fa-star"></i> Latest</span>
+							</a>
+
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">E-Commerce Funnel Optimization & Customer Behavior Analysis</h3>
+								<p class="text-justify">Conducted a funnel analysis for an e-commerce website to identify conversion bottlenecks across key pages 
+									(home, search, payment, confirmation). Visualized the analysis, segmented data by gender and device, and analyzed trends to 
+									recommend actionable strategies for enhancing user acquisition and boosting sales conversions.
+								</p>
+								<p><strong>Technologies used:</strong> MySQL, Python, Power BI, Excel</p>
+								<div class="project-buttons text-center">
+									<a href=""
+										target="_blank" class="btn btn-custom btn-sm"><i class="icon-github"></i>Check
+										Project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry">
+							<a href="" target="_blank"
+								class="block-20 zoom-effect" style="background-image: url('images/hr_analytics.jpg');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">HR Data Analytics Dashboard</h3>
+								<p>Developed an interactive HR analytics dashboard using Tableau to analyze workforce trends, attrition rates, and key performance metrics. 
+									Enhanced decision-making efficiency by 40% through actionable insights into 10 critical HR questions, empowering HR teams with real-time 
+									data visualization and improved strategic planning.</p>
+								<p><strong>Technologies used:</strong> Tableau, Excel</p>
+								<div class="project-buttons text-center">
+									<a href="" target="_blank"
+										class="btn btn-custom btn-sm"><i class="icon-github"></i> Check Project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="softwaredevelopment" class="tabcontent">
+				<!-- Insert Artificial Intelligence projects HTML here -->
+				<div class="row">
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="images\Ifinget Demo.mp4" target="_blank" class="block-20 zoom-effect"
+								style="background-image: url('images/budget.jpg');">
+								<span class="latest-tag"><i class="fas fa-star"></i> Latest</span>
+							</a>
+
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading">I Finget - Financial Tracker and Stock Insights Android App</h3>
+								<p class="text-justify">Developed an Android application using Java and Android X to
+									track financial transactions, fetch real-time stock data, and display related news.
+									Integrated SQLite for local storage and Firebase for authentication to ensure secure
+									and efficient data management.</p>
+								<p><strong>Technologies used:</strong> Java, Android X, SQLite, Firebase</p>
+								<div class="project-buttons text-center">
+									<a href="images\Ifinget Demo.mp4" target="_blank"
+										class="btn btn-custom btn-sm mr-2"><i class="icon-eye"></i> Demo</a>
+									<a href="https://github.com/Bhargav-Kumar98/I-Finget-Project" target="_blank"
+										class="btn btn-custom btn-sm"><i class="icon-github"></i>Check Project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-5">
+				<div class="col-md-12 text-center">
+					<div class="custom-carousel-controls">
+						<!--<button class="btn btn-primary prev-btn"><i class="icon-chevron-left"></i></button> -->
+						<a href="https://github.com/Bhargav-Kumar98?tab=repositories" target="_blank"
+							class="btn btn-primary py-3 px-5"
+							style="display: inline-flex; align-items: center; justify-content: center;">
+							<i class="icon-github" style="font-size: 24px; margin-right: 10px;"></i> All Projects
+						</a>
+						<!-- <button class="btn btn-primary next-btn"><i class="icon-chevron-right"></i></button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="certifications-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+			  <div class="col-md-10 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Certifications</h1>
+				<h2 class="mb-4">Certifications</h2>
+			  </div>
+			</div>
 		  
-		  <div class="row mt-5">
-			<div class="col-md-12 text-center">
-			  <div class="custom-carousel-controls">
-				<!--<button class="btn btn-primary prev-btn"><i class="icon-chevron-left"></i></button> -->
-				<a href="https://github.com/Bhargav-Kumar98?tab=repositories" target="_blank" class="btn btn-primary py-3 px-5" style="display: inline-flex; align-items: center; justify-content: center;">
-					<i class="icon-github" style="font-size: 24px; margin-right: 10px;"></i> All Projects
-				  </a>
-				<!-- <button class="btn btn-primary next-btn"><i class="icon-chevron-right"></i></button> -->
+			<div id="certifications-carousel" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-md-4 ftco-animate">
+							<div class="resume-wrap bg-dark p-4 mb-4">
+								<img src="images/certificates/ai-associate-certificate.jpg"
+									alt="Salesforce AI Associate Certificate" class="img-fluid mb-3"
+									onclick="showCertificate('images/certificates/ai-associate-certificate.jpg')">
+								<h3 class="skill-header mt-3">Salesforce Certified AI Associate</h3>
+								<p class="text-light">
+									Salesforce<br>
+									<span class="date">Issued: Feb 2025</span><br>
+									Credential ID: 5807771
+								</p>
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn btn-primary mr-2"
+										onclick="window.open('https://trailhead.salesforce.com/en/credentials/verification/', '_blank')">
+										<i class="fas fa-external-link-alt"></i> Verify Certificate
+									</button>
+									<button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top"
+										title="Use email: bhargav98a@gmail.com to verify credential">
+										<i class="fas fa-info-circle"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-md-4 ftco-animate">
+							<div class="resume-wrap bg-dark p-4 mb-4">
+								<img src="images/certificates/javaScript-developer-certificate.jpg"
+									alt="Salesforce JavaScript Developer I Certificate" class="img-fluid mb-3"
+									onclick="showCertificate('images/certificates/javaScript-developer-certificate.jpg')">
+								<h3 class="skill-header mt-3">Salesforce Certified JavaScript Developer I</h3>
+								<p class="text-light">
+									Salesforce<br>
+									<span class="date">Issued: May 2023</span><br>
+									Credential ID: 3374588
+								</p>
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn btn-primary mr-2"
+										onclick="window.open('https://trailhead.salesforce.com/en/credentials/verification/', '_blank')">
+										<i class="fas fa-external-link-alt"></i> Verify Certificate
+									</button>
+									<button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top"
+										title="Use email: bhargav98a@gmail.com to verify credential">
+										<i class="fas fa-info-circle"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-md-4 ftco-animate">
+							<div class="resume-wrap bg-dark p-4 mb-4">
+								<img src="images/certificates/platform-developer-certificate.jpg"
+									alt="Salesforce Platform Developer I Certificate" class="img-fluid mb-3"
+									onclick="showCertificate('images/certificates/platform-developer-certificate.jpg')">
+								<h3 class="skill-header mt-3">Salesforce Certified Platform Developer I</h3>
+								<p class="text-light">
+									Salesforce<br>
+									<span class="date">Issued: April 2022</span><br>
+									Credential ID: 2277531
+								</p>
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn btn-primary mr-2"
+										onclick="window.open('https://trailhead.salesforce.com/en/credentials/verification/', '_blank')">
+										<i class="fas fa-external-link-alt"></i> Verify Certificate
+									</button>
+									<button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top"
+										title="Use email: bhargav98a@gmail.com to verify credential">
+										<i class="fas fa-info-circle"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+		
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-md-4 ftco-animate">
+							<div class="resume-wrap bg-dark p-4 mb-4">
+								<img src="images/certificates/omniStudio-developer-certificate.jpg"
+									alt="Salesforce OmniStudio Developer Certificate" class="img-fluid mb-3"
+									onclick="showCertificate('images/certificates/omniStudio-developer-certificate.jpg')">
+								<h3 class="skill-header mt-3">Salesforce Certified OmniStudio Developer</h3>
+								<p class="text-light">
+									Salesforce<br>
+									<span class="date">Issued: Mar 2022</span><br>
+									Credential ID: 2174183
+								</p>
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn btn-primary mr-2"
+										onclick="window.open('https://trailhead.salesforce.com/en/credentials/verification/', '_blank')">
+										<i class="fas fa-external-link-alt"></i> Verify Certificate
+									</button>
+									<button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top"
+										title="Use email: bhargav98a@gmail.com to verify credential">
+										<i class="fas fa-info-circle"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-md-4 ftco-animate">
+							<div class="resume-wrap bg-dark p-4 mb-4">
+								<img src="images/certificates/google-data-analytics.jpg"
+									alt="Google Data Analytics Specialization" class="img-fluid mb-3"
+									onclick="showCertificate('images/certificates/google-data-analytics.jpg')">
+								<h3 class="skill-header mt-3">Google Data Analytics Professional Certificate</h3>
+								<p class="text-light">
+									Coursera<br>
+									<span class="date">Issued: Aug 2021</span>
+								</p>
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn btn-primary mr-2"
+										onclick="window.open('https://coursera.org/share/272a69c5ec8c502344cd6164bc7baa86', '_blank')">
+										<i class="fas fa-external-link-alt"></i> Verify Certificate
+									</button>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-md-4 ftco-animate">
+							<div class="resume-wrap bg-dark p-4 mb-4">
+								<img src="images/certificates/infosys-certified.png"
+									alt="Infosys Global Agile Developer Certificate" class="img-fluid mb-3"
+									onclick="showCertificate('images/certificates/infosys-certified.png')">
+								<h3 class="skill-header mt-3">Infosys Certified Global Agile Developer</h3>
+								<p class="text-light">
+									Infosys<br>
+									<span class="date">Issued: June 2022</span>
+								</p>
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn btn-primary"
+										onclick="showCertificate('images/certificates/infosys-certified.png')">
+										View Certificate
+									</button>
+								</div>
+							</div>
+						</div>
+		
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+
+						<div class="col-md-4 ftco-animate">
+							<div class="resume-wrap bg-dark p-4 mb-4">
+								<img src="images/certificates/deep-learning-nanodegree.jpg" alt="Deep Learning Certificate"
+									class="img-fluid mb-3"
+									onclick="showCertificate('images/certificates/deep-learning-nanodegree.jpg')">
+								<h3 class="skill-header mt-3">Deep Learning Nanodegree</h3>
+								<p class="text-light">
+									Udacity<br>
+									<span class="date">Issued: 2020</span>
+								</p>
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn btn-primary"
+										onclick="showCertificate('images/certificates/deep-learning-nanodegree.jpg')">
+										View Certificate
+									</button>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-md-4 ftco-animate">
+							<div class="resume-wrap bg-dark p-4 mb-4">
+								<img src="images/certificates/cv-nanodegree.jpg" alt="Computer Vision Certificate"
+									class="img-fluid mb-3" onclick="showCertificate('images/certificates/cv-nanodegree.jpg')">
+								<h3 class="skill-header mt-3">Computer Vision Nanodegree</h3>
+								<p class="text-light">
+									Udacity<br>
+									<span class="date">Issued: 2020</span>
+								</p>
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn btn-primary"
+										onclick="showCertificate('images/certificates/cv-nanodegree.jpg')">
+										View Certificate
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 ftco-animate">
+							<div class="resume-wrap bg-dark p-4 mb-4">
+								<img src="images/certificates/data-engineering-certificate.jpg" alt="Data Engineering Certificate"
+									class="img-fluid mb-3" onclick="showCertificate('images/certificates/data-engineering-certificate.jpg')">
+								<h3 class="skill-header mt-3">Data Engineering Master Course</h3>
+								<p class="text-light">
+									Udemy<br>
+									<span class="date">Issued: March 2025</span>
+								</p>
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn btn-primary"
+										onclick="showCertificate('images/certificates/data-engineering-certificate.jpg')">
+										View Certificate
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="carousel-controls-container">
+				<a class="carousel-control-prev" href="#certifications-carousel" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#certifications-carousel" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
 			  </div>
 			</div>
 		  </div>
-		</div>
-	  </section>
+	</section>
 
-	  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
 		<div class="container">
-		  <div class="row justify-content-center mb-5 pb-3">
-			<div class="col-md-7 heading-section text-center ftco-animate">
-			  <h1 class="big big-2">Contact</h1>
-			  <h2 class="mb-4">Contact Me</h2>
-			</div>
-		  </div>
-	  
-		  <div class="row justify-content-center d-flex contact-info mb-5">
-			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-			  <div class="align-self-stretch box p-4 text-center">
-				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="icon-map-signs"></span>
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
 				</div>
-				<h3 class="mb-4">Address</h3>
-				<p><a href="#">USA</a></p>
-			  </div>
 			</div>
-			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-			  <div class="align-self-stretch box p-4 text-center">
-				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="icon-phone2"></span>
+
+			<div class="row justify-content-center d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p><a href="#">USA</a></p>
+					</div>
 				</div>
-				<h3 class="mb-4">Contact Number</h3>
-				<p><a href="tel://13127144489">+ 1 (312) 714-4489</a></p>
-			  </div>
-			</div>
-			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-			  <div class="align-self-stretch box p-4 text-center">
-				<div class="icon d-flex align-items-center justify-content-center">
-				  <span class="icon-paper-plane"></span>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://13127144489">+ 1 (312) 714-4489</a></p>
+					</div>
 				</div>
-				<h3 class="mb-4">Email Address</h3>
-				<p><a href="mailto:bhargavoffic@gmail.com">bhargavoffic@gmail.com</a></p>
-			  </div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:bhargavoffic@gmail.com">bhargavoffic@gmail.com</a></p>
+					</div>
+				</div>
 			</div>
-		  </div>
-	  
-		  <div class="row justify-content-center">
-			<div class="col-md-7 ftco-animate text-center">
-			  <h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSevnYmH5WUn54XUw_40YZNwprirkpRoZBffGz9XF-H92g0ElA/viewform" target="_blank" class="btn btn-primary py-3 px-5">Click Here</a></h2>
+
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question? </span> <a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSevnYmH5WUn54XUw_40YZNwprirkpRoZBffGz9XF-H92g0ElA/viewform"
+							target="_blank" class="btn btn-primary py-3 px-5">Click Here</a></h2>
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </section>
-	  
-	  
+	</section>
 
 
- 
-	
-    <footer class="ftco-footer ftco-section">
+
+
+
+
+	<footer class="ftco-footer ftco-section">
 		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </footer>
+	</footer>
 
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
 
-  <script>
-	$(document).ready(function(){
-		$('.project-carousel').owlCarousel({
-		  loop: true,
-		  margin: 30,
-		  nav: false,
-		  responsive: {
-			0: {
-			  items: 1
-			},
-			768: {
-			  items: 1
+	<script src="js/main.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+
+
+		document.addEventListener("DOMContentLoaded", function () {
+			const element = document.getElementById('typing-animation');
+			const texts = ['AI & ML Practitioner', 'Cloud & Analytics Professional', 'Tech Blogger'];
+			let index = 0;
+			let isDeleting = false;
+			let typeSpeed = 100; // Adjust typing speed (lower = faster)
+			let deleteSpeed = 50; // Adjust deleting speed (lower = faster)
+
+			function type() {
+				const currentText = texts[index];
+
+				if (!isDeleting) {
+					// Typing forward
+					element.textContent = currentText.slice(0, element.textContent.length + 1);
+					if (element.textContent === currentText) {
+						isDeleting = true;
+						setTimeout(type, 2000); // Pause at full text
+						return;
+					}
+				} else {
+					// Deleting backward
+					element.textContent = currentText.slice(0, element.textContent.length - 1);
+					if (element.textContent === '') {
+						isDeleting = false;
+						index = (index + 1) % texts.length;
+					}
+				}
+
+				setTimeout(type, isDeleting ? deleteSpeed : typeSpeed);
 			}
-		  }
+
+			type(); // Start animation
 		});
-	  
-		$('.next-btn').click(function() {
-		  $('.project-carousel').trigger('next.owl.carousel');
+
+
+
+
+		function openProjectTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+
+			// Hide all tab content
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].classList.remove("active");
+			}
+
+			// Remove active class from all tab links
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].classList.remove("active");
+			}
+
+			// Show the selected tab content and add active class to the clicked button
+			document.getElementById(tabName).classList.add("active");
+			evt.currentTarget.classList.add("active");
+		}
+
+		document.addEventListener("DOMContentLoaded", function () {
+			const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+			const navbarToggler = document.querySelector(".navbar-toggler");
+			const navbarCollapse = document.querySelector(".navbar-collapse");
+
+			navLinks.forEach(function (link) {
+				link.addEventListener("click", function () {
+					if (window.innerWidth < 992) { // Only collapse on mobile view
+						navbarCollapse.classList.remove("show");
+					}
+				});
+			});
 		});
-	  
-		$('.prev-btn').click(function() {
-		  $('.project-carousel').trigger('prev.owl.carousel');
-		});
-	  });
-	  
-  </script>
-    
-  </body>
+
+
+		function showCertificate(imagePath) {
+			// Create a modal or lightbox to display the certificate image
+			let modal = document.createElement('div');
+			modal.style.position = 'fixed';
+			modal.style.top = '0';
+			modal.style.left = '0';
+			modal.style.width = '100%';
+			modal.style.height = '100%';
+			modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+			modal.style.display = 'flex';
+			modal.style.justifyContent = 'center';
+			modal.style.alignItems = 'center';
+			modal.style.zIndex = '1000';
+
+			let img = document.createElement('img');
+			img.src = imagePath;
+			img.style.maxWidth = '90%';
+			img.style.maxHeight = '90%';
+
+			modal.appendChild(img);
+			document.body.appendChild(modal);
+
+			modal.onclick = function () {
+				document.body.removeChild(modal);
+			};
+		}
+
+		$(document).ready(function() {
+			$('#certifications-carousel').carousel({
+			  interval: false // Disable auto-sliding
+			});
+		  });
+		  
+
+	</script>
+
+</body>
+
 </html>
